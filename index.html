@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ТО &laquo;Серость&raquo;</title>
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            transform-origin: center center;
+        }
+        body{
+            background-color: #000;
+        }
         @font-face {
-            font-family: Golos_Text_Black;
-            /* src: url("rubikmonooneregular.ttf"); */
-            src: url("Golos_Text_Black.ttf");
+            font-family: Rubik1;
+            src: url("rubikmonooneregular.ttf");
         }
         body > div{
             position: fixed;
@@ -19,19 +27,16 @@
         }
         #divback{
             text-align: center;
-            /* background-color: #f00; */
         }
         .text-like{
             line-height: 100vh;
-            /* font-size:  15vw; */
-            font-size:  20vw;
+            font-size:  15vw;
             color: #fff;
-            background-color: #000;
-            mix-blend-mode: darken;
+            /* background-color: #000; */
+            /* mix-blend-mode: darken; */
             text-align: center;
-            font-family: Golos_Text_Black;
+            font-family: Rubik1;
             font-variant-numeric: tabular-nums;
-            /* font-weight: 900; */
         }
         #gradient {
             background: linear-gradient(to right, red, orange, yellow, green, blue, purple);
@@ -40,31 +45,99 @@
             display: inline-block;
         }
         #divfront{
+            perspective: 1000px;
+            text-align: center;
+            background-color: #000;
+            mix-blend-mode: darken;
         }
-        #divfront > div{
-            margin: 0px;
-            padding: 0px;
-            /* display: inline-block; */
+        .letter-container{
             float: left;
+            color: transparent;
+            height: 100vh;
+        }
+        .letter{
+            /* float: left; */
+            color: transparent;
+            height: 100vh;
+            position: absolute;
+            top: 0px;
+            transform: rotateY(0deg);
+            transition: transform .5s linear;
+            transform-style: preserve-3d;
+        }
+        #centered{
+            display: inline-block;
+            line-height: 100vh;
+            font-size:  15vw;
+            text-align: center;
+            font-family: Rubik1;
+        }
+        .letter > div{
+            position: absolute;
+            top: 0px;
+            backface-visibility: hidden;
+            color: white;
+        }
+        .letter-container:hover > .letter{
+            transform: rotateY(180deg);
+        }
+        .letter > div.side1{
+            /* transform: translateZ(-1px); */
+        }
+        .letter > div.side2{
+            /* display: none; */
+            /* transform: rotateY(180deg) translateZ(1px); */
+            transform: rotateY(-180deg);
         }
     </style>
 </head>
 <body>
     <div id="divback">
         <span id="gradient" class="text-like">#808080</span>
-        <!-- <span id="gradient" class="text-like">серость</span> -->
     </div>
-    <div id="divfront" class="text-like">#808080</div>
-    <!-- <div id="divfront" class="text-like">серость</div> -->
-    <!-- <div id="divfront" class="text-like">
-        <div>c</div>
-        <div>е</div>
-        <div>р</div>
-        <div>о</div>
-        <div>с</div>
-        <div>т</div>
-        <div>ь</div>
-    </div> -->
+    <!-- <div id="divfront" class="text-like">#808080</div>
+    <div id="divfront" class="text-like">серость</div> -->
+    <div id="divfront">
+        <div id="centered"  class="text-like">
+            <div class="letter-container">
+                a
+                <div class="letter">
+                    a
+                    <div class="side1">a</div>
+                    <div class="side2">1</div>
+                </div>
+            </div>
+            
+            <div class="letter-container">
+                a
+                <div class="letter">
+                    a
+                    <div class="side1">b</div>
+                    <div class="side2">2</div>
+                </div>
+            </div>
+            <div class="letter-container">
+                a
+                <div class="letter">
+                    a
+                    <div class="side1">c</div>
+                    <div class="side2">3</div>
+                </div>
+            </div>
+            <!-- div.letter*3>div*2.side$ -->
+            
+            <!-- <div class="letter">
+                a
+                <div class="side1">b</div>
+                <div class="side2">2</div>
+            </div>
+            <div class="letter">
+                a
+                <div class="side1">c</div>
+                <div class="side2">3</div>
+            </div> -->
+        </div>
+    </div>
 
 </body>
 </html>
