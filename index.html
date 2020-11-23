@@ -28,12 +28,28 @@
         #divback{
             text-align: center;
         }
+        div#red{
+            position: fixed;
+            top: 0px;
+            width: 50%;
+            height: 100vh;
+            background-color: red;
+            left: 0px;
+            right: auto;
+        }
+        div#purple{
+            position: fixed;
+            top: 0px;
+            width: 50%;
+            height: 100vh;
+            background-color: purple;
+            right: 0px;
+            left: auto;
+        }
         .text-like{
             line-height: 100vh;
             font-size:  15vw;
             color: #fff;
-            /* background-color: #000; */
-            /* mix-blend-mode: darken; */
             text-align: center;
             font-family: Rubik1;
             font-variant-numeric: tabular-nums;
@@ -82,60 +98,76 @@
             transform: rotateY(180deg);
         }
         .letter > div.side1{
-            /* transform: translateZ(-1px); */
         }
         .letter > div.side2{
-            /* display: none; */
-            /* transform: rotateY(180deg) translateZ(1px); */
             transform: rotateY(-180deg);
         }
     </style>
 </head>
 <body>
+    <div id="red"></div>
+    <div id="purple"></div>
     <div id="divback">
-        <span id="gradient" class="text-like">#808080</span>
+        <span id="gradient" class="text-like">0123456</span>
     </div>
-    <!-- <div id="divfront" class="text-like">#808080</div>
-    <div id="divfront" class="text-like">серость</div> -->
     <div id="divfront">
-        <div id="centered"  class="text-like">
+        <div id="centered"  class="text-like">           
             <div class="letter-container">
                 a
                 <div class="letter">
                     a
-                    <div class="side1">a</div>
-                    <div class="side2">1</div>
-                </div>
-            </div>
-            
-            <div class="letter-container">
-                a
-                <div class="letter">
-                    a
-                    <div class="side1">b</div>
-                    <div class="side2">2</div>
+                    <div class="side1">#</div>
+                    <div class="side2">с</div>
                 </div>
             </div>
             <div class="letter-container">
                 a
                 <div class="letter">
                     a
-                    <div class="side1">c</div>
-                    <div class="side2">3</div>
+                    <div class="side1">8</div>
+                    <div class="side2">е</div>
                 </div>
             </div>
-            <!-- div.letter*3>div*2.side$ -->
-            
-            <!-- <div class="letter">
+            <div class="letter-container">
                 a
-                <div class="side1">b</div>
-                <div class="side2">2</div>
+                <div class="letter">
+                    a
+                    <div class="side1">0</div>
+                    <div class="side2">р</div>
+                </div>
             </div>
-            <div class="letter">
+            <div class="letter-container">
                 a
-                <div class="side1">c</div>
-                <div class="side2">3</div>
-            </div> -->
+                <div class="letter">
+                    a
+                    <div class="side1">8</div>
+                    <div class="side2">о</div>
+                </div>
+            </div>
+            <div class="letter-container">
+                a
+                <div class="letter">
+                    a
+                    <div class="side1">0</div>
+                    <div class="side2">с</div>
+                </div>
+            </div>
+            <div class="letter-container">
+                a
+                <div class="letter">
+                    a
+                    <div class="side1">8</div>
+                    <div class="side2">т</div>
+                </div>
+            </div>
+            <div class="letter-container">
+                a
+                <div class="letter">
+                    a
+                    <div class="side1">0</div>
+                    <div class="side2">ь</div>
+                </div>
+            </div>
         </div>
     </div>
 
