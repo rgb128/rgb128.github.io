@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТО &laquo;Серость&raquo;</title>
+    <style>
+        @font-face {
+            font-family: Golos_Text_Black;
+            /* src: url("rubikmonooneregular.ttf"); */
+            src: url("Golos_Text_Black.ttf");
+        }
+        body > div{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        #divback{
+            text-align: center;
+            /* background-color: #f00; */
+        }
+        .text-like{
+            line-height: 100vh;
+            /* font-size:  15vw; */
+            font-size:  20vw;
+            color: #fff;
+            background-color: #000;
+            mix-blend-mode: darken;
+            text-align: center;
+            font-family: Golos_Text_Black;
+            font-variant-numeric: tabular-nums;
+            /* font-weight: 900; */
+        }
+        #gradient {
+            background: linear-gradient(to right, red, orange, yellow, green, blue, purple);
+            color: transparent;
+            height: 100%;
+            display: inline-block;
+        }
+        #divfront{
+        }
+        #divfront > div{
+            margin: 0px;
+            padding: 0px;
+            /* display: inline-block; */
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="divback">
+        <span id="gradient" class="text-like">#808080</span>
+        <!-- <span id="gradient" class="text-like">серость</span> -->
+    </div>
+    <div id="divfront" class="text-like">#808080</div>
+    <!-- <div id="divfront" class="text-like">серость</div> -->
+    <!-- <div id="divfront" class="text-like">
+        <div>c</div>
+        <div>е</div>
+        <div>р</div>
+        <div>о</div>
+        <div>с</div>
+        <div>т</div>
+        <div>ь</div>
+    </div> -->
+
+</body>
+</html>
