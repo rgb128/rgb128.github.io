@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transform-origin: center center;
+    user-select: none;
+}
+body{
+    background-color: #000;
+}
+@font-face {
+    font-family: Rubik1;
+    src: url("rubikmonooneregular.ttf");
+}
+body > div{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+#divback{
+    text-align: center;
+}
+div#red{
+    position: fixed;
+    top: 0px;
+    width: 50%;
+    height: 100vh;
+    background-color: red;
+    left: 0px;
+    right: auto;
+}
+div#purple{
+    position: fixed;
+    top: 0px;
+    width: 50%;
+    height: 100vh;
+    background-color: purple;
+    right: 0px;
+    left: auto;
+}
+.text-like{
+    line-height: 100vh;
+    font-size:  15vw;
+    color: #fff;
+    text-align: center;
+    font-family: Rubik1;
+    font-variant-numeric: tabular-nums;
+}
+#gradient {
+    background: linear-gradient(to right, red, orange, yellow, green, deepskyblue, blue, purple);
+    color: transparent;
+    height: 100%;
+    display: inline-block;
+}
+#divfront{
+    perspective: 25vw;
+    text-align: center;
+    background-color: #000;
+    mix-blend-mode: darken;
+}
+.letter-container{
+    float: left;
+    color: transparent;
+    height: 100vh;
+}
+.letter{
+    /* float: left; */
+    color: transparent;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    transform: rotateY(0deg);
+    /* transition: transform .5s linear; */
+    transform-style: preserve-3d;
+}
+#centered{
+    display: inline-block;
+    line-height: 100vh;
+    font-size:  15vw;
+    text-align: center;
+    font-family: Rubik1;
+}
+.letter > div{
+    position: absolute;
+    top: 0px;
+    backface-visibility: hidden;
+    color: white;
+}
+#centered.rotated > .letter-container > .letter{
+    transform: rotateY(180deg);
+}
+.letter > div.side1{
+    transform: rotateY(0deg);
+}
+.letter > div.side2{
+    transform: rotateY(-180deg);
+}
+
+
+#centered > .letter-container:nth-child(1) > .letter{
+    transition: transform .5s linear 0s;
+}
+#centered > .letter-container:nth-child(2) > .letter{
+    transition: transform .5s linear .1s;
+}
+#centered > .letter-container:nth-child(3) > .letter{
+    transition: transform .5s linear .2s;
+}
+#centered > .letter-container:nth-child(4) > .letter{
+    transition: transform .5s linear .3s;
+}
+#centered > .letter-container:nth-child(5) > .letter{
+    transition: transform .5s linear .4s;
+}
+#centered > .letter-container:nth-child(6) > .letter{
+    transition: transform .5s linear .5s;
+}
+#centered > .letter-container:nth-child(7) > .letter{
+    transition: transform .5s linear .6s;
+}
