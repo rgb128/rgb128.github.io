@@ -1,9 +1,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@900&display=swap'); */
-/* @font-face {
+@font-face {
     font-family: MainFont;
-    src: url("movavi-grotesque.black.ttf");
-} */
+    src: url("Golos_Text_Black.ttf");
+}
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap');
 
 *{
@@ -12,11 +12,12 @@
     box-sizing: border-box;
     transform-origin: center center;
     user-select: none;
-    /* font-family: MainFont; */
+    font-family: MainFont;
     /* font-family: 'Raleway', sans-serif; */
     /* font-family: 'Exo 2', sans-serif; */
-    font-family: 'Alegreya', serif;
-    font-size: calc(100vw / 8 * 1.8);
+    /* font-family: 'Alegreya', serif; */
+    /* font-size: calc(100vw / 8 * 1.8); */
+    font-size: calc(100vw / 8 * 1.5);
     font-weight: bold;
 }
 body{
@@ -37,7 +38,8 @@ div#red{
     top: 0px;
     width: 50%;
     height: 100vh;
-    background-color: red;
+    /* background-color: red; */
+    background-color: #b721ff;
     left: 0px;
     right: auto;
 }
@@ -46,7 +48,8 @@ div#purple{
     top: 0px;
     width: 50%;
     height: 100vh;
-    background-color: purple;
+    /* background-color: purple; */
+    background-color: #fa709a;
     right: 0px;
     left: auto;
 }
@@ -60,7 +63,9 @@ div#purple{
 }
 #gradient {
     /* background: linear-gradient(to right, red, orange, yellow, green, deepskyblue, blue, purple); */
-    background: linear-gradient(to right, red, orange, yellow, green, blue, purple);
+    /* background: linear-gradient(to right, red, orange, yellow, green, blue, purple); */
+    /* background: linear-gradient(90deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706); */
+    background: linear-gradient(90deg, #b721ff, #2af598, #fec051, #fee140, #fa709a);
     color: transparent;
     height: 100%;
     display: inline-block;
