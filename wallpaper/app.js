@@ -8,7 +8,7 @@ const FIRST_TIME = 2000; // rotate at first at .. ms
 const WORDS = [
     [ '#', '8', '0', '8', '0', '8', '0' ],
     [ 'с', 'е', 'р', 'о', 'с', 'т', 'ь' ],
-    [ { img: createGhImage() }, 'r', 'g', 'b', '1', '2', '8' ]
+    [ { img: createGhImage() }, '\u00A0r', 'g', 'b', '1', '2', '8' ]
 ];
 /** @type {HTMLElement[]} */
 const ELEMENTS = Array.from(document.querySelectorAll('#centered > .letter-container > .letter'));
