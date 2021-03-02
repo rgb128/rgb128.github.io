@@ -1,10 +1,10 @@
 'use strict';
 
 let currentRotated = false;
-let currentSide = 2; // 0, 1, 2 .. WORDS.length
+let currentSide = 0; // 0, 1, 2 .. WORDS.length
 let currentTimeout = undefined;
-const DEFAULT_TIME = 5000000; // rotate every .. ms
-const FIRST_TIME = 2000000; // rotate at first at .. ms
+const DEFAULT_TIME = 5000; // rotate every .. ms
+const FIRST_TIME = 2000; // rotate at first at .. ms
 const WORDS = [
     [ '#', '8', '0', '8', '0', '8', '0' ],
     [ 'с', 'е', 'р', 'о', 'с', 'т', 'ь' ],
