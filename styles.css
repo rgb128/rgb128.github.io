@@ -219,6 +219,39 @@ h1,h2,h3,h4,h5,h6{
 
 
 
+/* one-text-column */
+.one-text-column{
+    position: relative;
+    margin-top: 20px;
+}
+.one-text-column .paint-point{
+    width: 100%;
+    height: 100%;
+    border-radius: var(--big-br);
+    background: linear-gradient(90deg, #b9deed, #efefef);
+    color: var(--black);
+}
+.one-text-column .paint-point>div{
+    float: left;
+    width: 70%;
+    margin-left: 15%;
+    z-index: 999;
+    padding: 20px 0;
+}
+.one-text-column .paint-point h3{
+    -webkit-line-clamp: 1;
+    margin: 0;
+    font-size: 2.75rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 2.75rem;
+}
+
+
+
+
+
+
 /* two-columns */
 .two-columns{
     height: 34vw;
