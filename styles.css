@@ -148,7 +148,7 @@ h1,h2,h3,h4,h5,h6{
     border-radius: var(--big-br);
     padding: .1rem .5rem;
     font-size: 0.75rem;
-    box-shadow: var(--shadow);
+    background: var(--before-bg);
 }
 
 
