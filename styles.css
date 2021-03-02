@@ -246,6 +246,13 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing: 0;
     line-height: 2.75rem;
 }
+@media screen and (max-width: 840px){
+    .one-text-column .paint-point>div{
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+}
 
 
 
