@@ -150,6 +150,7 @@ h1,h2,h3,h4,h5,h6{
     padding: .1rem .5rem;
     font-size: 0.75rem;
     background: var(--before-bg);
+    color: var(--white);
 }
 
 
@@ -177,17 +178,17 @@ h1,h2,h3,h4,h5,h6{
 
 
 
-/* one-column */
-.one-column{
+/* one-column in big-section */
+.big-section .one-column{
     height: 25vw;
     max-height: 320px;
     position: relative;
     margin-top: 20px;
 }
-.one-column .paint-point{
-    border-radius: 0;
+.big-section .one-column .paint-point{
+    border-radius: 0px;
 }
-.one-column .paint-point>div{
+.big-section .one-column .paint-point>div{
     position: absolute;
     width: 70%;
     top: calc(50% - 2.75rem - 20px);
@@ -195,7 +196,7 @@ h1,h2,h3,h4,h5,h6{
     z-index: 999;
     text-align: center;
 }
-.one-column .paint-point h3{
+.big-section .one-column .paint-point h3{
     -webkit-line-clamp: 1;
     margin: 0;
     color: var(--white);
@@ -204,7 +205,7 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing: 0;
     line-height: 2.75rem;
 }
-.one-column .paint-point button{
+.big-section .one-column .paint-point button{
     font-size: .875rem;
     font-weight: 400;
     padding: 8px 24px;
@@ -216,12 +217,65 @@ h1,h2,h3,h4,h5,h6{
     cursor: pointer;
     transition: transform .3s;
 }
-.one-column .paint-point button:hover{
+.big-section .one-column .paint-point button:hover{
     transform: scale(1.1);
 }
 @media screen and (max-width: 840px){
-    .one-column{
+    .big-section .one-column{
         height: 50vw;
+    }
+}
+
+
+
+
+
+/* one-column in small-section */
+.small-section .one-column{
+    height: 25vw;
+    max-height: 320px;
+    position: relative;
+    margin-top: 20px;
+}
+.small-section .one-column .paint-point{
+    position: absolute;
+}
+.small-section .one-column .paint-point picture{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: var(--big-br);
+}
+.small-section .one-column .paint-point>div{
+    position: absolute;
+    width: 70%;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+}
+.small-section .one-column .paint-point h3{
+    -webkit-line-clamp: 1;
+    margin: 0;
+    font-size: 2.75rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--white);
+    line-height: 2.75rem;
+}
+.small-section .one-column .paint-point h4{
+    -webkit-line-clamp: 1;
+    white-space: initial;
+    margin: 0;
+    color: var(--white);
+    font-size: 1.375;
+    font-weight: 400;
+}
+@media screen and (max-width: 1220px){
+    .small-section .one-column{
+        height: 50vw;
+        position: relative;
+        margin-top: 20px;
     }
 }
 
@@ -730,11 +784,15 @@ footer.big-section .paint-point{
 }
 footer.big-section .paint-point div{
     position: relative;
-    width: 100%;
-    padding: 50px 120px;
+    padding: 0 60px;
     margin: 0;
-    transform: none;
     color: var(--gray-color);
+    float: left;
+    width: 1200px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    z-index: 999;
+    padding: 60px 0;
 }
 footer.big-section .paint-point div p{
     margin-bottom: 0;
@@ -743,4 +801,20 @@ footer.big-section .paint-point div a{
     font-weight: 500;
     text-decoration: underline;
     margin-right: 5px;
+}
+@media screen and (max-width: 1220px){
+    footer.big-section .paint-point div{
+        width: 100%;
+        margin: 0;
+        transform: none;
+        padding: 60px 20px;
+    }
+}
+@media screen and (max-width: 840px){
+    footer.big-section .paint-point div{
+        width: 100%;
+        margin: 0;
+        transform: none;
+        padding: 60px 20px;
+    }
 }
