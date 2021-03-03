@@ -1,0 +1,140 @@
+@font-face {
+    font-family: MainFont;
+    src: url("Golos_Text_Black.ttf");
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transform-origin: center center;
+    user-select: none;
+    font-family: MainFont;
+    font-size: calc(100vw / 8 * 1.4);
+}
+body{
+    background-color: #000;
+}
+body > div{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+#divback{
+    text-align: center;
+}
+div#red{
+    position: fixed;
+    top: 0px;
+    width: 50%;
+    height: 100vh;
+    background-color: #b721ff;
+    left: 0px;
+    right: auto;
+}
+div#purple{
+    position: fixed;
+    top: 0px;
+    width: 50%;
+    height: 100vh;
+    background-color: #fa709a;
+    right: 0px;
+    left: auto;
+}
+.text-like{
+    line-height: 100vh;
+    font-size:  15vw;
+    color: #fff;
+    text-align: center;
+    /* font-family: Rubik1; */
+    font-variant-numeric: tabular-nums;
+}
+#gradient {
+    /* background: linear-gradient(to right, red, orange, yellow, green, deepskyblue, blue, purple); */
+    /* background: linear-gradient(to right, red, orange, yellow, green, blue, purple); */
+    /* background: linear-gradient(90deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706); */
+    background: linear-gradient(90deg, #b721ff, #2af598, #fec051, #fee140, #fa709a);
+    color: transparent;
+    height: 100%;
+    display: inline-block;
+    width: calc(100vw / 8 * 7);
+}
+#divfront{
+    perspective: 25vw;
+    text-align: center;
+    background-color: #000;
+    mix-blend-mode: darken;
+}
+.letter-container{
+    float: left;
+    color: transparent;
+    height: 100vh;
+    /* HERE */
+    width: calc(100vw / 8);
+}
+.letter{
+    /* HERE */
+    width: calc(100vw / 8);
+    color: transparent;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+#centered{
+    display: inline-block;
+    line-height: 100vh;
+    font-size:  15vw;
+    text-align: center;
+}
+.letter > div{ /* side */
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    backface-visibility: hidden;
+    color: white;
+}
+#centered.rotated > .letter-container > .letter{
+    transform: rotateY(180deg);
+}
+.letter > div.side1{
+    transform: rotateY(0deg);
+}
+.letter > div.side2{
+    transform: rotateY(-180deg);
+}
+
+
+#centered > .letter-container:nth-child(1) > .letter{
+    transition: transform .5s linear 0s;
+}
+#centered > .letter-container:nth-child(2) > .letter{
+    transition: transform .5s linear .1s;
+}
+#centered > .letter-container:nth-child(3) > .letter{
+    transition: transform .5s linear .2s;
+}
+#centered > .letter-container:nth-child(4) > .letter{
+    transition: transform .5s linear .3s;
+}
+#centered > .letter-container:nth-child(5) > .letter{
+    transition: transform .5s linear .4s;
+}
+#centered > .letter-container:nth-child(6) > .letter{
+    transition: transform .5s linear .5s;
+}
+#centered > .letter-container:nth-child(7) > .letter{
+    transition: transform .5s linear .6s;
+}
+
+div.letter-image-github{
+    color: transparent;
+    background-image: url('./img/github.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
