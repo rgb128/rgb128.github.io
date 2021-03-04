@@ -444,6 +444,7 @@ h1,h2,h3,h4,h5,h6{
     .three-columns{
         height: 50vw;
         width: 150%;
+        padding-right: 20px;
     }
 }
 @media screen and (max-width: 480px){
