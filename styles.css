@@ -104,7 +104,7 @@ h1,h2,h3,h4,h5,h6{
 }
 @media screen and (max-width: 1220px){
     .small-section{
-        margin: 20px 0;
+        margin: 0;
         transform: none;
         padding: 10px;
         overflow-x: scroll;
@@ -117,6 +117,7 @@ h1,h2,h3,h4,h5,h6{
 @media screen and (max-width: 840px){
     .small-section{
         padding: 10px 20px;
+        margin: 0;
     }
 }
 
@@ -221,7 +222,7 @@ h1,h2,h3,h4,h5,h6{
     transform: scale(1.1);
 }
 @media screen and (max-width: 840px){
-    .big-section .one-column{
+    .big-section>.one-column{
         height: 50vw;
     }
 }
@@ -230,52 +231,63 @@ h1,h2,h3,h4,h5,h6{
 
 
 
+
 /* one-column in small-section */
 .small-section .one-column{
-    height: 25vw;
-    max-height: 320px;
+    height: 30vw;
+    max-height: 400px;
     position: relative;
     margin-top: 20px;
 }
 .small-section .one-column .paint-point{
-    position: absolute;
-}
-.small-section .one-column .paint-point picture{
-    position: absolute;
     width: 100%;
     height: 100%;
+    border-radius: var(--big-br);    
     overflow: hidden;
-    border-radius: var(--big-br);
 }
-.small-section .one-column .paint-point>div{
+.small-section .one-column .paint-point picture{
+    width: 100%;
+    height: 100%;
+    border-radius: var(--big-br);    
+}
+.small-section .one-column .paint-point div{
     position: absolute;
-    width: 70%;
-    bottom: 20px;
-    left: 20px;
-    z-index: 999;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    width: 50%;
+    color: var(--white);
 }
-.small-section .one-column .paint-point h3{
+.small-section .one-column .paint-point div h3{
     -webkit-line-clamp: 1;
     margin: 0;
     font-size: 2.75rem;
     font-weight: 400;
-    letter-spacing: 0;
-    color: var(--white);
-    line-height: 2.75rem;
 }
-.small-section .one-column .paint-point h4{
+.small-section .one-column .paint-point div h4{
     -webkit-line-clamp: 1;
+    text-shadow: 0 2px 4px var(--before-bg);
     white-space: initial;
     margin: 0;
-    color: var(--white);
-    font-size: 1.375;
-    font-weight: 400;
+    font-size: 1.375rem;
+    font-weight: 500;
 }
-@media screen and (max-width: 1220px){
+.small-section .one-column .paint-point:hover img{
+    transform: scale(1.1);
+}
+@media screen and (max-width: 840px){
     .small-section .one-column{
-        height: 50vw;
-        position: relative;
-        margin-top: 20px;
+        height: calc(50vw - 40px);
+        min-height: 30vh;
+    }
+    .small-section .one-column .paint-point div{
+        width: 100%;
+    }
+    .small-section .one-column .paint-point div h3{
+        font-size: 1.375rem;
+    }
+    .small-section .one-column .paint-point div h4{
+        font-size: .875rem;
     }
 }
 
@@ -769,6 +781,7 @@ h1,h2,h3,h4,h5,h6{
         margin-top: 10px;
     }
 }
+
 
 
 
