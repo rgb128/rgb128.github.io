@@ -420,7 +420,7 @@ h1,h2,h3,h4,h5,h6{
     position: absolute;
     width: 100%;
     height: 40%;
-    background: linear-gradient(rgba(0, 0, 0, 0), var(--before-bg));
+    background: linear-gradient(rgba(0, 0, 0, 0), var(--before-bg-hover) 40%);
     bottom: 0;
     left: 0;
     z-index: 1;
