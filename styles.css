@@ -33,7 +33,6 @@
 *,*::before,*::after{
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    outline: none;
 }
 a{
     text-decoration: none;
@@ -87,7 +86,7 @@ h1,h2,h3,h4,h5,h6{
     float: left;
     width: 100%;
     max-width: 1200px;
-    margin: 20px 50%;
+    margin: 20px 50% 10px 50%;
     transform: translate(-50%);
 }
 .small-section::-webkit-scrollbar {
