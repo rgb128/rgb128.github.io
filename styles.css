@@ -93,9 +93,16 @@ h1,h2,h3,h4,h5,h6{
 .small-section::-webkit-scrollbar {
     height: 10px;
 }
+.small-section:hover::-webkit-scrollbar {
+    height: 10px;
+}
 .small-section::-webkit-scrollbar-thumb {
     background-color: var(--third-color);
     border-radius: var(--big-br);
+    border: 3px solid var(--white);
+}
+.small-section:hover::-webkit-scrollbar-thumb {
+    border: 0px;
 }
 .big-section{
     float: left;
