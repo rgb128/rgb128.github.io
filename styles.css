@@ -190,6 +190,13 @@ h1,h2,h3,h4,h5,h6{
     background-size: 400%;
     animation: top-bar 30s linear infinite;
     z-index: 999;
+    transition: .3s ease;
+}
+.top-bar.out{
+	display: block;
+}
+@media screen and (max-width: 840px){
+    .top-bar.out{transform: translateY(-100%);}
 }
 @keyframes top-bar{
     0%{background-position: 0%;}
