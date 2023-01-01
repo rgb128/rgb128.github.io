@@ -28,6 +28,8 @@
 }
 html{
 	font-size: 18px;
+	overflow-x: hidden;
+	width: 100vw;
 }
 body{
 	margin: 0;
@@ -39,9 +41,6 @@ body{
 	line-height: 1.5;
 
 	background-color: var(--st-bg);
-
-	width: 100vw;
-	overflow-x: hidden;
 }
 *{
 	box-sizing: border-box;
@@ -122,7 +121,7 @@ body main>h2::after, footer>h2::after{
 }
 .main_new::before{
 	position: absolute;
-	display: block;
+	display: inline-block;
 	content: '';
 	width: 120vw;
 	height: 100%;
@@ -194,6 +193,7 @@ body main>h2::after, footer>h2::after{
 
 /* GALLERY */
 .main_gallery{
+	position: relative;
 	float: left;
 	width: 100%;
 	height: auto;
@@ -328,7 +328,7 @@ body main>h2::after, footer>h2::after{
 	width: 500px;
 	height: 500px;
 	left: -200px;
-	top: calc(1600px + 100vh);
+	top: calc(950px);
 	z-index: -9;
 	border-radius: 100%;
 	background-image: url(images/cub.png);
@@ -342,7 +342,7 @@ body main>h2::after, footer>h2::after{
 	width: 500px;
 	height: 500px;
 	right: -200px;
-	top: calc(800px + 100vh);
+	top: calc(400px);
 	z-index: -9;
 	background-image: url(images/circle.png);
 	background-size: 30px;
@@ -381,9 +381,6 @@ body main>h2::after, footer>h2::after{
 
 
 @media screen and (min-width: 1700px){
-	body{
-		background: red;
-	}
 
 	.main, .header, .footer{
 		margin: 0 50%;
@@ -396,9 +393,6 @@ body main>h2::after, footer>h2::after{
 }
 
 @media screen and (max-width: 1500px){
-	body{
-		/* background: green; */
-	}
 	:root{
 		--st-width: 90%;
 		--st-margin-t: 50px;
@@ -406,9 +400,6 @@ body main>h2::after, footer>h2::after{
 	}
 }
 @media screen and (max-width: 1200px){
-	body{
-		/* background: purple; */
-	}
 	.main_gallery{
 		grid-template-columns: 1fr 1fr;
 		gap: 80px;
@@ -423,9 +414,6 @@ body main>h2::after, footer>h2::after{
 }
 
 @media screen and (max-width: 950px){
-	body{
-		/* background: orange; */
-	}
 	.main_gallery{
 		grid-template-columns: 1fr;
 		gap: 80px;
@@ -481,9 +469,20 @@ body main>h2::after, footer>h2::after{
 		margin: 160px 50% 60px;
 	}
 	.circle{
-		top: calc(1200px + 100vh);
+		top: calc(400px);
 	}
 	.cube{
-		top: calc(2200px + 100vh);
+		top: calc(1300px);
+	}
+
+
+	*::before, *::after, .cube, .circle{
+		/* display: none !important; */
+		position: absolute;
+		display: inline-block;
+	}
+	body{
+		overflow-x: hidden;
+		width: 100vw;
 	}
 }
