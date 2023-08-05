@@ -58,6 +58,16 @@ h1, h2, h3, h4, h5, h6{
 	height: auto;
 	margin: 0 0 50px 0;
 	padding: 0 20%;
+	position: relative;
+}
+.header::before{
+	display: block;
+	content: '';
+	position: absolute;
+	width: 100px;
+	height: 100vw;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0), var(--st-bg));
+	right: 25px;
 }
 .ddd{
 	float: left;
@@ -77,8 +87,8 @@ h1, h2, h3, h4, h5, h6{
 	z-index: -10;
 }
 @keyframes top-bar{
-    0%{background-position: 0%;}
-    100%{background-position: 400%;}
+	0%{background-position: 0%;}
+	100%{background-position: 400%;}
 }
 .header h1{
 	font-size: 7.5rem;
@@ -112,12 +122,26 @@ h1, h2, h3, h4, h5, h6{
 	}
 }
 @media screen and (max-width: 550px){
+	.header{
+		transform: rotate(90deg);
+		width: 100vh;
+		animation: test 5s infinite;
+		height: 100vw;
+		padding: 0 25px;
+		margin: 0 0 50px 0;
+		transform-origin: 50vw 50%;
+	}
 	.header h1{
 		font-size: 4rem;
-		line-height: 2;
+		line-height: 33vw;
 	}
 	.block{
 		height: 1.8rem;
+		margin-left: 0;
+	}
+	@keyframes top-bar{
+		0%{background-position: 400%;}
+		100%{background-position: 0%;}
 	}
 }
 
@@ -129,6 +153,7 @@ h1, h2, h3, h4, h5, h6{
 	float: left;
 	width: var(--st-width);
 	margin: var(--st-margin-t) var(--st-margin-l);
+	z-index: 9999;
 }
 body main>h2, footer>h2{
 	float: left;
@@ -138,6 +163,9 @@ body main>h2, footer>h2{
 	text-align: center;
 	transform: translate(-50%, 0);
 	font-size: 2rem;
+	background: var(--st-bg);
+	border-radius: 100%;
+	box-shadow: 0 0 50px 50px var(--st-bg);
 }
 body main>h2::after, footer>h2::after{
 	position: absolute;
@@ -183,6 +211,11 @@ body main>h2::after, footer>h2::after{
 	rotate: 3deg;
 	z-index: -9;
 	opacity: .06;
+}
+@media screen and (max-width: 550px){
+	.main_new::before{
+		opacity: 0;
+	}
 }
 .main_new .preview {
 	position: relative;
@@ -496,13 +529,14 @@ body main>h2::after, footer>h2::after{
 		transform: translate(-50%, 50%);
 	}
 	.main_new{
-		padding: 90px 10px 20px 10px;
+		padding: 20px 10px 20px 10px;
 	}
 	.footer div{
 		padding: 100px 10px 80px 10px;
 	}
 	.main_new::before{
 		left: -10vw;
+		top: 0;
 	}
 	.footer div::before{
 		top: 50px;
@@ -518,7 +552,7 @@ body main>h2::after, footer>h2::after{
 		top: 0 !important;
 	}
 	.main>h2{
-		margin: 100px 50% 60px;
+		margin: 100px 50% 20px;
 	}
 	.circle{
 		top: calc(400px);
