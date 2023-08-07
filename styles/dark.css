@@ -1,7 +1,7 @@
 :root{
-	--st-bg: #181818;
-	--st-color: #f5f5f5;
-	--rv-bg: #f5f5f5;
-	--rv-color: #181818;
+	--main-bg: #1a1a1a;
+	--main-color: #f0f0f0;
+	--sec-bg: #f0f0f00f;
+	--sec-color: #f0f0f0;
 	--gradient: linear-gradient(45deg, #0977ab, #93135a, #a29411, #0977ab);
 }

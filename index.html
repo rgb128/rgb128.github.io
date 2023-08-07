@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>#808080</title>
+
 	<link rel="stylesheet" href="styles/index.css">
 	<link rel="stylesheet" href="styles/light.css" media="(prefers-color-scheme: light)">
 	<link rel="stylesheet" href="styles/dark.css" media="(prefers-color-scheme: dark)">
@@ -12,85 +12,122 @@
 <body>
 
 	<header class="header">
-		<div class="ddd"><h1>#808080</h1> <div class="block" style="animation-delay: 2s;"></div></div>
-		<div class="ddd"><h1>rgb128</h1> <div class="block" style="animation-delay: 3s;"></div></div>
-		<div class="ddd"><h1>graynesss</h1> <div class="block" style="animation-delay: 1s;"></div></div>
+		<div class="hello">
+			
+			<div class="hello_row">
+				<h1 class="hello_column_header">#808080</h1>
+				<span class="hello_column_span" style="animation-duration: 10s;"></span>
+			</div>
+
+			<div class="hello_row">
+				<h1 class="hello_column_header">rgb128</h1>
+				<span class="hello_column_span" style="animation-duration: 15s;"></span>
+			</div>
+
+			<div class="hello_row">
+				<h1 class="hello_column_header">grayness</h1>
+				<span class="hello_column_span" style="animation-duration: 5s;"></span>
+			</div>
+
+		</div>
 	</header>
 
 	<main class="main">
 
-		<h2>new point</h2>
-		<div class="main_new animb">
-			<picture class="preview">
-				<img src="images/penr.png" alt="">
+		<h2 class="main_headers animb">new poit</h2>
+
+		<div class="newest animb">
+
+			<picture class="newest_preview">
+				<img class="newest_preview_img" src="images/6.png" alt="">
 			</picture>
-			<div class="info">
-				<h3>title of last work</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rem voluptate repudiandae aperiam dolor iusto ratione, rerum facilis doloribus ab.</p>
-				<a class="link" href="">explore</a>
+
+			<h3 class="newest_title">title of last work</h3>
+
+			<p class="newest_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, vitae! Nam fuga, maiores beatae suscipit perspiciatis itaque tenetur reprehenderit veritatis.</p>
+
+			<div class="newest_link">
+				<a href="">explore</a>
 			</div>
+
 		</div>
 
-		<h2>gallery</h2>
-		<div class="main_gallery">
-			
+
+
+		<h2 class="main_headers animb">gallery</h2>
+
+		<div class="gallary">
+
 			<a href="https://rgb128.github.io/plus" class="point_of_art animb" style="transform: rotate(1deg); background: rgb(117, 100, 100);">
-				<picture class="preview">
-					<img src="images/plus.png" alt="">
+
+				<picture class="point_of_art_preview">
+					<img class="point_of_art_preview_img" src="images/5.png" alt="">
 				</picture>
-				<p>Короткая заседающая идея</p>
-				<h3 style="background: rgb(78, 66, 66);">Название работы</h3>
+
+				<h3 class="point_of_art_header" style="background: rgb(78, 66, 66);">Прожектор перестройки</h3>
+
 			</a>
 
 			<a href="https://rgb128.github.io/Exhibition1/" class="point_of_art animb" style="transform: rotate(-1.5deg); background: rgb(158, 13, 57);">
-				<picture class="preview">
-					<img src="images/img (1).webp" alt="">
+
+				<picture class="point_of_art_preview">
+					<img class="point_of_art_preview_img" src="images/4.webp" alt="">
 				</picture>
-				<p>Короткая заседающая идея</p>
-				<h3 style="background: rgb(114, 11, 42);">Название работы</h3>
+
+				<h3 class="point_of_art_header" style="background: rgb(114, 11, 42);">point of art name</h3>
+
 			</a>
 
-			<div class="cube"></div>
-			<div class="circle"></div>
+			<a href="https://rgb128.github.io/ClockTime/" class="point_of_art wight_point_of_art animb" style="transform: rotate(-0.5deg); background: rgb(65, 107, 59);">
 
-			<a href="https://rgb128.github.io/ClockTime/" class="point_of_art wide animb" style="transform: rotate(-0.5deg); background: rgb(65, 107, 59);">
-				<picture class="preview">
-					<!-- <img src="images/img (3).webp" alt=""> -->
-					<video autoplay muted loop src="images/2022-12-12 22-28-58~2.mp4"></video>
+				<picture class="point_of_art_preview">
+					<video src="images/3.mp4" playsinline autoplay loop></video>
 				</picture>
-				<p>Короткая заседающая идея</p>
-				<h3 style="background: rgb(42, 70, 38);">Название работы</h3>
+
+				<h3 class="point_of_art_header" style="background: rgb(42, 70, 38);">point of art name</h3>
+
 			</a>
 
 			<a href="https://coloroffall.netlify.app/" class="point_of_art animb" style="transform: rotate(-2deg); background: rgb(144, 112, 24);">
-				<picture class="preview">
-					<img src="images/img (5).png" alt="">
+
+				<picture class="point_of_art_preview">
+					<img class="point_of_art_preview_img" src="images/2.png" alt="">
 				</picture>
-				<p>Короткая заседающая идея</p>
-				<h3 style="background: rgb(96, 77, 11);">Прожектор перестройки</h3>
+
+				<h3 class="point_of_art_header" style="background: rgb(96, 77, 11);">point of art name</h3>
+
 			</a>
 
 			<a href="http://prozhektorperestroiki.herokuapp.com/" class="point_of_art animb" style="transform: rotate(1deg); background: rgb(19, 62, 135);">
-				<picture class="preview">
-					<img src="images/img (2).webp" alt="">
+
+				<picture class="point_of_art_preview">
+					<img class="point_of_art_preview_img" src="images/1.webp" alt="">
 				</picture>
-				<p>Короткая заседающая идея</p>
-				<h3 style="background: rgb(11, 34, 74);">Название работы</h3>
+
+				<h3 class="point_of_art_header" style="background: rgb(11, 34, 74);">point of art name</h3>
+
 			</a>
 
+		</div>
+
+
+
+		<h2 class="main_headers animb">about us</h2>
+
+		<div class="about_us animb">
+			<p class="about_us_text">
+				ТО «Серость» объявляет джихад старому изобразительному искусству. Культура должна идти в ногу со временем, а последнее ушло далеко вперёд. Ответа нет, и мы вынуждены придумывать его прямо сегодня.
+			</p>
+			<p class="about_us_text">
+				Взаимодействовать с единицей искусства - вот, чего требуют наши сердца. Крайне важно не разделять автора, произведение и зрителя. Наблюдатель должен становиться непосредственным участником процесса обмена идей между творцом и окружающим миром. Это не мнение, это тенденция, подкреплённая фактами. И надо приближать время доминирования концепции интерактивного искусства всеми возможными способами. Будущее за нами, и я не хочу наступления новых времён без новых музеев. Настало время забыть старые способы делать красиво, и создавать нечто совершенно иное, отвечающее запросам поколения айфонов и подписок.
+			</p>
 		</div>
 
 	</main>
 
-	<footer class="footer">
-		<h2>about us</h2>
-		<div class="animb">
-			<p>ТО «Серость» объявляет джихад старому изобразительному искусству. Культура должна идти в ногу со временем, а последнее ушло далеко вперёд. Ответа нет, и мы вынуждены придумывать его прямо сегодня.</p>
-			<p>Взаимодействовать с единицей искусства - вот, чего требуют наши сердца. Крайне важно не разделять автора, произведение и зрителя. Наблюдатель должен становиться непосредственным участником процесса обмена идей между творцом и окружающим миром. Это не мнение, это тенденция, подкреплённая фактами. И надо приближать время доминирования концепции интерактивного искусства всеми возможными способами. Будущее за нами, и я не хочу наступления новых времён без новых музеев. Настало время забыть старые способы делать красиво, и создавать нечто совершенно иное, отвечающее запросам поколения айфонов и подписок.</p>
-		</div>
-	</footer>
+	<footer class="footer"></footer>
 	
 	<script src="app.js"></script>
-	
+
 </body>
 </html>
