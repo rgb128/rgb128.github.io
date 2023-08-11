@@ -450,21 +450,43 @@ h1, h2, h3, h4, h5, h6, a{
 
 
 
-@media (hover: none) {
-	.about_us::before{
-		width: 100%;
-		height: 100%;
-		left: 0;
-		margin: 0;
-		transform: none;
-		box-shadow: 0 0 0 30px var(--sec-bg);
+.shape{
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	background-size: 8%;
+	background-position: center center;
+	opacity: .06;
+	rotate: 45deg;
+	filter: var(--invert);
+	z-index: -999;
+}
+.shape.circle{
+	top: 180vh;
+	left: -200px;
+	background-image: url(../images/particle_circle.png);
+}
+.shape.square{
+	top: 350vh;
+	right: -200px;
+	border-radius: 100%;
+	background-image: url(../images/particle_square.png);
+}
+@media screen and (width <= 1200px) {
+	.shape{
+		width: 400px;
+		height: 400px;
 	}
-	.newest::before{
-		width: 100%;
-		height: 100%;
-		left: 0;
-		margin: 0;
-		transform: none;
-		box-shadow: 0 0 0 30px var(--sec-bg);
+}
+@media screen and (width <= 610px) {
+	.shape{
+		width: 500px;
+		height: 500px;
+	}
+	.shape.circle{
+		top: 250vh;
+	}
+	.shape.square{
+		top: 450vh;
 	}
 }

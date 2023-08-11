@@ -4,4 +4,5 @@
 	--sec-bg: #1a1a1a0f;
 	--sec-color: #f0f0f0;
 	--gradient: linear-gradient(45deg, #03a9f4, #f441a3, #ffeb3b, #03a9f4);
+	--invert: invert(1)
 }
