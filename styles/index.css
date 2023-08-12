@@ -31,7 +31,7 @@ div#body{
 	width: 100%;
 	overflow-x: hidden;
 
-	background: var(--main-bg);
+	/* background: var(--main-bg); */
 	color: var(--main-color);
 	font-size: 1rem;
 	line-height: 1.5;

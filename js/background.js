@@ -15,6 +15,7 @@ function generateSmartBackground(div, params = {}) {
     const thinColor = params.thinColor || '#f99';
     const thickColor = params.thickColor || '#99f';
     const one = params.one || 50;
+    const scrollElement = params.scrollElement || document.body;
 
 
     function generateShifts(count) {
@@ -53,8 +54,8 @@ function generateSmartBackground(div, params = {}) {
         window.addEventListener('resize', e => {
             resizeDiv();
         });
-        document.addEventListener('scroll', e => {
-            div.style.top = (-document.documentElement.scrollTop * parallax) + 'px';
+        scrollElement.addEventListener('scroll', e => {
+            div.style.top = (-scrollElement.scrollTop * parallax) + 'px';
         });
     }
     function resizeDiv() {
@@ -355,6 +356,7 @@ generateSmartBackground(document.getElementById('background'), {
     thinColor:  'rgba(0, 0, 0, 0.1)',
     thickColor:  'rgba(255, 255, 255, 0)',
     one:  50,
+    scrollElement: document.getElementById('body'),
 }
 );
 
