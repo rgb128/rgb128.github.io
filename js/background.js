@@ -60,7 +60,7 @@ function generateSmartBackground(div, params = {}) {
     }
     function resizeDiv() {
         const screenHeight = document.documentElement.clientHeight;
-        const contentHeight = document.body.clientHeight;
+        const contentHeight = scrollElement.scrollHeight;
         screenWidth = document.body.clientWidth;
         if (screenHeight >= contentHeight) {
             // No parallax
@@ -349,14 +349,16 @@ function generateSmartBackground(div, params = {}) {
     window.requestAnimationFrame(onAnimation);
 }
 
+const darkMode = !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
 
-generateSmartBackground(document.getElementById('background'), {
-    speed:  10, 
-    parallax:  .5,
-    thinColor:  'rgba(0, 0, 0, 0.1)',
-    thickColor:  'rgba(255, 255, 255, 0)',
-    one:  50,
-    scrollElement: document.getElementById('body'),
-}
+generateSmartBackground(
+    document.getElementById('background'), {
+        speed:  10, 
+        parallax:  .5,
+        thinColor:  darkMode ? 'rgba(0, 0, 0, .5)' : 'rgba(0, 0, 0, 0.1)',
+        thickColor:  'rgba(255, 255, 255, 0)',
+        one:  50,
+        scrollElement: document.getElementById('body'),
+    }
 );
 

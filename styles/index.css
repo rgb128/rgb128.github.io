@@ -20,6 +20,10 @@ html{
 	font-size: 18px;
 }
 
+body {
+	background: var(--main-bg);
+}
+
 div#body{
 	
 	position: fixed;
@@ -63,6 +67,8 @@ h1, h2, h3, h4, h5, h6, a{
 /* HEADER */
 .header{
 	height: 100vh;
+	/* background: var(--main-bg); */
+	user-select: none;
 }
 @media screen and (width <= 610px) {
 	.header{
