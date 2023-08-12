@@ -25,7 +25,7 @@ function checkGalleryDiv() {
         // const isBottom = offsetTop >= scrollY + screenHeight; // Not center
         const isTop = offsetTop + (offsetHeight / 5) <= scrollY; // Center
         const isBottom = offsetTop >= scrollY + screenHeight - (offsetHeight / 5); // Center
-        console.log((isTop ? 'top' : ''), (isBottom ? 'bottom' : ''));
+        // console.log((isTop ? 'top' : ''), (isBottom ? 'bottom' : ''));
 
         isTop ? artPreview.classList.add('top') : artPreview.classList.remove('top');
         isBottom ? artPreview.classList.add('bottom') : artPreview.classList.remove('bottom');
