@@ -355,7 +355,7 @@ generateSmartBackground(
     document.getElementById('background'), {
         speed:  10, 
         parallax:  .5,
-        thinColor:  darkMode ? 'rgba(0, 0, 0, .5)' : 'rgba(0, 0, 0, 0.1)',
+        thinColor:  darkMode ? 'rgba(0, 0, 0, .1)' : 'rgba(0, 0, 0, 0.05)',
         thickColor:  'rgba(255, 255, 255, 0)',
         one:  50,
         scrollElement: document.getElementById('body'),
