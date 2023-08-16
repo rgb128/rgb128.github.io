@@ -100,21 +100,12 @@ h1, h2, h3, h4, h5, h6, a{
 }
 @media screen and (width <= 610px) {
 	.hello{
-		width: 90vh;
+		width: 120vh;
 		height: 100vw;
 		transform: rotate(90deg);
 		transform-origin: 50vw 50vw;
 		justify-content: space-around;
 		padding: 0;
-	}
-	.hello::before{
-		display: block;
-		position: absolute;
-		content: '';
-		width: 100px;
-		height: 100%;
-		background: linear-gradient(90deg, rgba(255, 255, 255, 0), var(--main-bg));
-		right: 0;
 	}
 }
 
@@ -181,8 +172,18 @@ h1, h2, h3, h4, h5, h6, a{
 }
 @media screen and (width <= 610px) {
 	.hello_column_span{
+		position: relative;
 		margin: 0;
 		height: 2rem;
+	}
+	.hello_column_span::before{
+		display: block;
+		position: absolute;
+		content: '';
+		width: 50px;
+		height: 100%;
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0), var(--main-bg));
+		right: 0;
 	}
 }
 
@@ -214,6 +215,8 @@ h1, h2, h3, h4, h5, h6, a{
 	padding: 5px 25px;
 	text-align: center;
 	font-size: 1.8rem;
+	color: #1a1a1a;
+	z-index: 10;
 }
 .main_headers::before{
 	display: block;
@@ -223,8 +226,9 @@ h1, h2, h3, h4, h5, h6, a{
 	height: 3.2rem;
 	left: 0;
 	top: 0;
-	backdrop-filter: invert(1);
+	background: var(--sec-color);
 	transform: rotate(1deg);
+	z-index: -1;
 }
 @media screen and (width <= 1200px) {
 	.main_headers{
