@@ -504,3 +504,16 @@ h1, h2, h3, h4, h5, h6, a{
 		top: 450vh;
 	}
 }
+
+a,
+a:visited {
+	color: var(--link-color);
+	text-decoration: none;
+	font-weight: normal;
+}
+a:hover,
+a:active {
+	color: var(--link-hover);
+	text-decoration: none;
+	font-weight: normal;
+}
