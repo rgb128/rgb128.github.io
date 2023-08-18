@@ -44,4 +44,3 @@ Behind each piece of art lies an underlying idea, yet only the consumer can actu
 Engaging with art holds significant importance. However, there are limited opportunities for such interaction. We are dedicated to effecting change in this world. We hold the belief that a consumer wields an equal impact on art as the artist does. Our mission is to revolutionize art by crafting pieces that actively engage with the viewer. While viewers inherently alter art, we enable them to do so on a local level, contributing to a global transformation. We represent the spirit of our era. We are the Creative Association "Grayness". 
 
 Ми з України.
-
