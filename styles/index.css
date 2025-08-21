@@ -277,7 +277,7 @@ h1, h2, h3, h4, h5, h6, a{
 
 
 .newest_preview{
-	background: lightblue;
+	/* background: lightblue; */
 	width: 100%;
 	grid-column: 1 / 2;
 	grid-row: 1 / 4;
@@ -343,8 +343,8 @@ h1, h2, h3, h4, h5, h6, a{
 
 
 
-/* gallary */
-.gallary{
+/* gallery */
+.gallery{
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -352,7 +352,7 @@ h1, h2, h3, h4, h5, h6, a{
 	margin: 50px 0;
 }
 @media screen and (width <= 610px) {
-	.gallary{
+	.gallery{
 		grid-template-columns: 1fr;
 		margin: 25px 0;
 	}

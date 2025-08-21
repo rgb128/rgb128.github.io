@@ -278,7 +278,6 @@ function generateSmartBackground(div, params = {}) {
     }
 
     function getImageForPx(xPx, width, height) {
-        console.log('newImage');
         const xUnitsStart = xPx / ONE;
         const xUnitsEnd = (xPx + width) / ONE;
         const yUnitsStart = 0;
