@@ -148,6 +148,7 @@ function generateAPiece(piece) {
     const pieceLinkContainer = createElem('a', ['point_of_art', 'animb']);
     pieceLinkContainer.style.background = piece.backgroundColor;
     pieceLinkContainer.style.transform = `rotate(${getRandomRotation()}deg)`;
+    pieceLinkContainer.href = piece.link;
 
     const picture = createElem('picture', ['point_of_art_preview']);
     if (piece.imageSrc.endsWith('.mp4')) {
