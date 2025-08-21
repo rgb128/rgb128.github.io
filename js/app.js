@@ -2,11 +2,18 @@
 
 const PIECES = [
     {
+        name: 'night book',
+        description: 'what do you read at night',
+        link: 'https://rgb128.github.io/NightBook',
+        imageSrc: 'images/night-book.png',
+        backgroundColor: '#00ffff',
+    },
+    {
         name: 'between the lines',
         description: 'Read between the lines. Look deeper',
         link: 'https://rgb128.github.io/between-the-lines',
         imageSrc: 'images/between-the-lines.png',
-        backgroundColor: '#9e400d', // todo here
+        backgroundColor: '#9e400d',
     },
     {
         name: 'iron curtain',
