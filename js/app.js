@@ -2,6 +2,13 @@
 
 const PIECES = [
     {
+        name: 'triangle',
+        description: 'a triangle is not always a triangle',
+        link: 'https://rgb128.github.io/triangle',
+        imageSrc: 'images/triangle.png',
+        backgroundColor: '#8b575f',
+    },
+    {
         name: 'night book',
         description: 'what do you read at night',
         link: 'https://rgb128.github.io/NightBook',
