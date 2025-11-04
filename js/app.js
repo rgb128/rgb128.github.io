@@ -1,5 +1,7 @@
 'use strict';
 
+// Colors: '#3a6ea5', '#bca48a', '#a12d2f', '#555d63', '#38e0a3', '#e2c044', '#2b5f9e', '#70414d', '#8a9ba8', '#c47c1b'
+
 const PIECES = [
     {
         name: 'triangle',
@@ -51,6 +53,13 @@ const PIECES = [
         backgroundColor: '#9e0d39',
     },
     {
+        name: 'Your Pack',
+        description: 'pack yourself',
+        link: 'https://rgb128.github.io/YourPack',
+        imageSrc: 'images/your-pack.png',
+        backgroundColor: '#3E7551',
+    },
+    {
         name: 'clock time',
         description: 'You make your time',
         link: 'https://rgb128.github.io/ClockTime',
@@ -60,7 +69,7 @@ const PIECES = [
     {
         name: 'color of fall',
         description: 'What is the color of fall?',
-        link: 'https://coloroffall.netlify.app',
+        link: 'https://rgb128.github.io/ColorOfFall',
         imageSrc: 'images/2.png',
         backgroundColor: '#907018',
     },
