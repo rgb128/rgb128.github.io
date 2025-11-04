@@ -57,7 +57,7 @@ const PIECES = [
         description: 'pack yourself',
         link: 'https://rgb128.github.io/YourPack',
         imageSrc: 'images/your-pack.png',
-        backgroundColor: '#3E7551',
+        backgroundColor: '#BCA48A',
     },
     {
         name: 'clock time',
