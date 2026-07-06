@@ -4,6 +4,13 @@
 
 const PIECES = [
     {
+        name: 'square',
+        description: 'a square is always a square',
+        link: 'https://rgb128.github.io/square',
+        imageSrc: 'images/square.png',
+        backgroundColor: '#7c6a8e',
+    },
+    {
         name: 'triangle',
         description: 'a triangle is not always a triangle',
         link: 'https://rgb128.github.io/triangle',
