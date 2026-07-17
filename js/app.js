@@ -4,6 +4,13 @@
 
 const PIECES = [
     {
+        name: 'window',
+        description: 'look what is outside the window',
+        link: 'https://rgb128.github.io/window',
+        imageSrc: 'images/window.png',
+        backgroundColor: '#87a9d4',
+    },
+    {
         name: 'square',
         description: 'a square is always a square',
         link: 'https://rgb128.github.io/square',
