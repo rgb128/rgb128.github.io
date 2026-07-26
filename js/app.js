@@ -4,6 +4,13 @@
 
 const PIECES = [
     {
+        name: 'divide\'n\'unite',
+        description: 'divide and multiply',
+        link: 'https://rgb128.github.io/divide-n-unite',
+        imageSrc: 'images/divide-n-unite.png',
+        backgroundColor: '#ff1493',
+    },
+    {
         name: 'window',
         description: 'look what is outside the window',
         link: 'https://rgb128.github.io/window',
