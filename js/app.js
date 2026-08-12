@@ -4,6 +4,13 @@
 
 const PIECES = [
     {
+        name: '6189',
+        description: 'the very essence',
+        link: 'https://rgb128.github.io/6189',
+        imageSrc: 'images/6189.png',
+        backgroundColor: '#ffffff',
+    },
+    {
         name: 'divide\'n\'unite',
         description: 'rock and multiply',
         link: 'https://rgb128.github.io/divide-n-unite',
