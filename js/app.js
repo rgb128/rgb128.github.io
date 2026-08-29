@@ -4,6 +4,13 @@
 
 const PIECES = [
     {
+        name: 'path',
+        description: 'screw the goal, enjoy the path',
+        link: 'https://rgb128.github.io/path',
+        imageSrc: 'images/path.png',
+        backgroundColor: '#a3b899',
+    },
+    {
         name: '6189',
         description: 'the very essence',
         link: 'https://rgb128.github.io/6189',
