@@ -4,6 +4,13 @@
 
 const PIECES = [
     {
+        name: 'sunset',
+        description: 'in heaven, they\'re talking about nothing but the sunset and how wonderful it is',
+        link: 'https://rgb128.github.io/sunset',
+        imageSrc: 'images/sunset.png',
+        backgroundColor: '#64508c',
+    },
+    {
         name: 'path',
         description: 'screw the goal, enjoy the path',
         link: 'https://rgb128.github.io/path',
