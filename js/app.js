@@ -5,7 +5,7 @@
 const PIECES = [
     {
         name: 'sunset',
-        description: 'in heaven, they\'re talking about nothing but the sunset and how wonderful it is',
+        description: 'In heaven, they\'re talking about nothing but the sea and how wonderful it is. They talk about the sunsets they saw, they talk about how the sun turned blood red before diving into the sea and they talk about how they could feel how the sun lost its power and the coolness from the sea and all that fire was only glowing inside',
         link: 'https://rgb128.github.io/sunset',
         imageSrc: 'images/sunset.png',
         backgroundColor: '#64508c',
